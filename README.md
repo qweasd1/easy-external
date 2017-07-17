@@ -1,19 +1,19 @@
-# easy-process
+# easy-external
 install npm package and spawn process easily from code
 
 ## Install
 ```bash
 // yarn
-yarn add easy-process
+yarn add easy-external
 
 // npm
-npm install --save easy-process
+npm install --save easy-external
 ```
 
 ## Usage
 
 ```javascript
-const createRunner =  require('easy-process');
+const createRunner =  require('easy-external');
 
 // create a Runner 
 // 'cwd'(required) is the current working directory for your runner
