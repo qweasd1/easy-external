@@ -4,10 +4,13 @@
 'use strict'
 
 const Runner = require('../lib/Runner');
+const path = require('path');
 
 let r = new Runner({
-  cwd:"/Users/tony/Documents/projects/web/scaffolding/repo/easy-process"
+  cwd:path.resolve(process.cwd(),"..")
 })
 
-console.log(r.installPackagesSync(["react","redux"],true));
-console.log(r.removePackagesSync(["react","redux"],true));
+r.installAll()
+
+// console.log(r.installPackages(["react","redux"],true));
+// console.log(r.removePackages(["react","redux"],true));
